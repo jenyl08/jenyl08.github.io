@@ -389,8 +389,8 @@
         }
         
         .trait_tooltip {
-            color: black;
-            text-shadow: -3px 0 5px #ffffff, 0 3px 5px #ffffff, 3px 0 5px #ffffff, 0 -3px 5px #ffffff;
+            color: white;
+            text-shadow: -1px 0 1px #B22222, 0 1px 1px #B22222, 1px 0 1px #B22222, 0 -1px 1px #B22222;
         }
         
         .info_icon {
@@ -2002,8 +2002,11 @@
                 $('.demon_synergy').html('<span style="color:white;">(2)</span>(4)(6)');
             }
             if (demon == 0) {
+                $('.count_demon_no').css('display', 'inline');
+                $('.count_demon_no').text("악마 x " + 0);
                 $('.count_demon').css('display', 'none');
             } else {
+			    $('.count_demon_no').css('display', 'none');
                 $('.count_demon').css('display', 'inline');
                 $('.count_demon').text("악마 x " + demon);
             }
@@ -2016,8 +2019,11 @@
                 $('.noble_synergy').html('<span style="color:white;">(3)</span>(6)');
             }
             if (noble == 0) {
+                $('.count_noble_no').css('display', 'inline');
+                $('.count_noble_no').text("귀족 x " + 0);			
                 $('.count_noble').css('display', 'none');
             } else {
+			    $('.count_noble_no').css('display', 'none');
                 $('.count_noble').css('display', 'inline');
                 $('.count_noble').text("귀족 x " + noble);
             }
@@ -2032,8 +2038,11 @@
                 $('.glacial_synergy').html('<span style="color:white;">(2)</span>(4)(6)');
             }
             if (glacial == 0) {
+                $('.count_glacial_no').css('display', 'inline');
+                $('.count_glacial_no').text("빙하 x " + 0);		
                 $('.count_glacial').css('display', 'none');
             } else {
+			    $('.count_glacial_no').css('display', 'none');
                 $('.count_glacial').css('display', 'inline');
                 $('.count_glacial').text("빙하 x " + glacial);
             }
@@ -2046,8 +2055,11 @@
                 $('.yordle_synergy').html('<span style="color:white;">(3)</span>(6)');
             }
             if (yordle == 0) {
+                $('.count_yordle_no').css('display', 'inline');
+                $('.count_yordle_no').text("요들 x " + 0);		
                 $('.count_yordle').css('display', 'none');
             } else {
+			    $('.count_yordle_no').css('display', 'none');
                 $('.count_yordle').css('display', 'inline');
                 $('.count_yordle').text("요들 x " + yordle);
             }
@@ -2060,8 +2072,11 @@
                 $('.wild_synergy').html('<span style="color:white;">(2)</span>(4)');
             }
             if (wild == 0) {
+                $('.count_wild_no').css('display', 'inline');
+                $('.count_wild_no').text("야생 x " + 0);		
                 $('.count_wild').css('display', 'none');
             } else {
+			    $('.count_wild_no').css('display', 'none');
                 $('.count_wild').css('display', 'inline');
                 $('.count_wild').text("야생 x " + wild);
             }
@@ -2072,8 +2087,11 @@
                 $('.voids_synergy').html('<span style="color:white;">(3)</span>');
             }
             if (voids == 0) {
+                $('.count_voids_no').css('display', 'inline');
+                $('.count_voids_no').text("공허 x " + 0);		
                 $('.count_voids').css('display', 'none');
             } else {
+			    $('.count_voids_no').css('display', 'none');
                 $('.count_voids').css('display', 'inline');
                 $('.count_voids').text("공허 x " + voids);
             }
@@ -2086,8 +2104,11 @@
                 $('.ninja_synergy').text("(1)(4)");
             }
             if (ninja == 0) {
+                $('.count_ninja_no').css('display', 'inline');
+                $('.count_ninja_no').text("닌자 x " + 0);		
                 $('.count_ninja').css('display', 'none');
             } else {
+			    $('.count_ninja_no').css('display', 'none');
                 $('.count_ninja').css('display', 'inline');
                 $('.count_ninja').text("닌자 x " + ninja);
             }
@@ -2100,8 +2121,11 @@
                 $('.imperial_synergy').html('<span style="color:white;">(2)</span>(4)');
             }
             if (imperial == 0) {
+                $('.count_imperial_no').css('display', 'inline');
+                $('.count_imperial_no').text("제국 x " + 0);		
                 $('.count_imperial').css('display', 'none');
             } else {
+			    $('.count_imperial_no').css('display', 'none');
                 $('.count_imperial').css('display', 'inline');
                 $('.count_imperial').text("제국 x " + imperial);
             }
@@ -2112,8 +2136,11 @@
                 $('.pirate_synergy').html('<span style="color:white;">(3)</span>');
             }
             if (pirate == 0) {
+                $('.count_pirate_no').css('display', 'inline');
+                $('.count_pirate_no').text("해적 x " + 0);		
                 $('.count_pirate').css('display', 'none');
             } else {
+			    $('.count_pirate_no').css('display', 'none');
                 $('.count_pirate').css('display', 'inline');
                 $('.count_pirate').text("해적 x " + pirate);
             }
@@ -2124,8 +2151,11 @@
                 $('.dragon_synergy').html('<span style="color:white;">(2)</span>');
             }
             if (dragon == 0) {
+                $('.count_dragon_no').css('display', 'inline');
+                $('.count_dragon_no').text("용 x " + 0);		
                 $('.count_dragon').css('display', 'none');
             } else {
+			    $('.count_dragon_no').css('display', 'none');
                 $('.count_dragon').css('display', 'inline');
                 $('.count_dragon').text("용 x " + dragon);
             }
@@ -2136,8 +2166,11 @@
                 $('.phantom_synergy').html('<span style="color:white;">(2)</span>');
             }
             if (phantom == 0) {
+                $('.count_phantom_no').css('display', 'inline');
+                $('.count_phantom_no').text("유령 x " + 0);		
                 $('.count_phantom').css('display', 'none');
             } else {
+			    $('.count_phantom_no').css('display', 'none');
                 $('.count_phantom').css('display', 'inline');
                 $('.count_phantom').text("유령 x " + phantom);
             }
@@ -2148,8 +2181,11 @@
                 $('.exile_synergy').html('<span style="color:white;">(1)</span>');
             }
             if (exile == 0) {
+                $('.count_exile_no').css('display', 'inline');
+                $('.count_exile_no').text("추방자 x " + 0);		
                 $('.count_exile').css('display', 'none');
             } else {
+			    $('.count_exile_no').css('display', 'none');
                 $('.count_exile').css('display', 'inline');
                 $('.count_exile').text("추방자 x " + exile);
             }
@@ -2160,8 +2196,11 @@
                 $('.robot_synergy').html('<span style="color:white;">(1)</span>');
             }
             if (robot == 0) {
+                $('.count_robot_no').css('display', 'inline');
+                $('.count_robot_no').text("로봇 x " + 0);		
                 $('.count_robot').css('display', 'none');
             } else {
+			    $('.count_robot_no').css('display', 'none');
                 $('.count_robot').css('display', 'inline');
                 $('.count_robot').text("로봇 x " + robot);
             }
@@ -2174,8 +2213,11 @@
                 $('.sorcerer_synergy').html('<span style="color:white;">(3)</span>(6)');
             }
             if (sorcerer == 0) {
+                $('.count_sorcerer_no').css('display', 'inline');
+                $('.count_sorcerer_no').text("마법사 x " + 0);		
                 $('.count_sorcerer').css('display', 'none');
             } else {
+			    $('.count_sorcerer_no').css('display', 'none');
                 $('.count_sorcerer').css('display', 'inline');
                 $('.count_sorcerer').text("마법사 x " + sorcerer);
             }
@@ -2188,8 +2230,11 @@
                 $('.assassin_synergy').html('<span style="color:white;">(3)</span>(6)');
             }
             if (assassin == 0) {
+                $('.count_assassin_no').css('display', 'inline');
+                $('.count_assassin_no').text("암살자 x " + 0);		
                 $('.count_assassin').css('display', 'none');
             } else {
+			    $('.count_assassin_no').css('display', 'none');
                 $('.count_assassin').css('display', 'inline');
                 $('.count_assassin').text("암살자 x " + assassin);
             }
@@ -2202,8 +2247,11 @@
                 $('.blademaster_synergy').html('<span style="color:white;">(3)</span>(6)');
             }
             if (blademaster == 0) {
+                $('.count_blademaster_no').css('display', 'inline');
+                $('.count_blademaster_no').text("검사 x " + 0);		
                 $('.count_blademaster').css('display', 'none');
             } else {
+			    $('.count_blademaster_no').css('display', 'none');
                 $('.count_blademaster').css('display', 'inline');
                 $('.count_blademaster').text("검사 x " + blademaster);
             }
@@ -2218,8 +2266,11 @@
                 $('.knight_synergy').html('<span style="color:white;">(2)</span>(4)(6)');
             }
             if (knight == 0) {
+                $('.count_knight_no').css('display', 'inline');
+                $('.count_knight_no').text("기사 x " + 0);		
                 $('.count_knight').css('display', 'none');
             } else {
+			    $('.count_knight_no').css('display', 'none');
                 $('.count_knight').css('display', 'inline');
                 $('.count_knight').text("기사 x " + knight);
             }
@@ -2232,8 +2283,11 @@
                 $('.brawler_synergy').html('<span style="color:white;">(2)</span>(4)');
             }
             if (brawler == 0) {
+                $('.count_brawler_no').css('display', 'inline');
+                $('.count_brawler_no').text("싸움꾼 x " + 0);		
                 $('.count_brawler').css('display', 'none');
             } else {
+			    $('.count_brawler_no').css('display', 'none');
                 $('.count_brawler').css('display', 'inline');
                 $('.count_brawler').text("싸움꾼 x " + brawler);
             }
@@ -2246,8 +2300,11 @@
                 $('.gunslinger_synergy').html('<span style="color:white;">(2)</span>(4)');
             }
             if (gunslinger == 0) {
+                $('.count_gunslinger_no').css('display', 'inline');
+                $('.count_gunslinger_no').text("총잡이 x " + 0);		
                 $('.count_gunslinger').css('display', 'none');
             } else {
+			    $('.count_gunslinger_no').css('display', 'none');
                 $('.count_gunslinger').css('display', 'inline');
                 $('.count_gunslinger').text("총잡이 x " + gunslinger);
             }
@@ -2258,8 +2315,11 @@
                 $('.shapeshifter_synergy').html('<span style="color:white;">(3)</span>');
             }
             if (shapeshifter == 0) {
+                $('.count_shapeshifter_no').css('display', 'inline');
+                $('.count_shapeshifter_no').text("형상변환자 x " + 0);		
                 $('.count_shapeshifter').css('display', 'none');
             } else {
+			    $('.count_shapeshifter_no').css('display', 'none');
                 $('.count_shapeshifter').css('display', 'inline');
                 $('.count_shapeshifter').text("형상변환자 x " + shapeshifter);
             }
@@ -2270,8 +2330,11 @@
                 $('.elementalist_synergy').html('<span style="color:white;">(3)</span>');
             }
             if (elementalist == 0) {
+                $('.count_elementalist_no').css('display', 'inline');
+                $('.count_elementalist_no').text("원소술사 x " + 0);		
                 $('.count_elementalist').css('display', 'none');
             } else {
+			    $('.count_elementalist_no').css('display', 'none');
                 $('.count_elementalist').css('display', 'inline');
                 $('.count_elementalist').text("원소술사 x " + elementalist);
             }
@@ -2284,8 +2347,11 @@
                 $('.ranger_synergy').html('<span style="color:white;">(2)</span>(4)');
             }
             if (ranger == 0) {
+                $('.count_ranger_no').css('display', 'inline');
+                $('.count_ranger_no').text("정찰대 x " + 0);		
                 $('.count_ranger').css('display', 'none');
             } else {
+			    $('.count_ranger_no').css('display', 'none');
                 $('.count_ranger').css('display', 'inline');
                 $('.count_ranger').text("정찰대 x " + ranger);
             }
@@ -2296,10 +2362,13 @@
                 $('.guardian_synergy').html('<span style="color:white;">(2)</span>');
             }
             if (guardian == 0) {
+                $('.count_guardian_no').css('display', 'inline');
+                $('.count_guardian_no').text("수호자 x " + 0);		
                 $('.count_guardian').css('display', 'none');
             } else {
+			    $('.count_guardian_no').css('display', 'none');
                 $('.count_guardian').css('display', 'inline');
-                $('.count_guardian').text("샤먼 x " + guardian);
+                $('.count_guardian').text("수호자 x " + guardian);
             }
         }
 
@@ -2561,7 +2630,7 @@
 	업데이트 내역 <br>
 	- 2019년 7월 2일 : 시너지 창 제작<br>
 	- 2019년 7월 3일 : 현재 레벨과 캐릭터 뽑을 확률 표시, 댓글 기능 추가<br>
-	- 2019년 7월 4일 : 선택한 캐릭터를 가장 위에 표시<br>
+	- 2019년 7월 4일 : 선택한 캐릭터를 가장 위에 표시, 캐릭터 수 0개 표시 후 선택 된 계열,직업만 색상 표시, 시너지 효과 가독성이 낮아 글자 효과 변경 <br>
 	- 차후 업데이트 필요 사항 : 가장 위에 표시한 캐릭터 ui 변경(급하게 만드느라 안 좋은거 같음)<br>
 	- 차후 업데이트 필요 사항 : 아이템 관련된 기능(조합표? 라던가 우선 ui 구상 필요)<br>
 	
@@ -2607,31 +2676,57 @@
 <span id = "selected_champ"><img src = "pieces\nochamp.png" style="width:100px;height:100px"></span>
 <br>
 
-<label class="count_demon" style="display: none;color: #2a6392;">악마 x 0</label>
-<label class="count_noble" style="display: none;color: #b8bcbd;">귀족 x 0</label>
-<label class="count_glacial" style="display: none;color: #00be00;">빙하 x 0</label>
-<label class="count_yordle" style="display: none;color: #801c1b;">빙하 x 0</label>
-<label class="count_wild" style="display: none;color: #66178b;">빙하 x 0</label>
-<label class="count_voids" style="display: none;color: #3c3f41;">언데드 x 0</label>
-<label class="count_ninja" style="display: none;color: #c12629;">닌자 x 0</label>
-<label class="count_imperial" style="display: none;color: #4346c1;">제국 x 0</label>
-<label class="count_elementals" style="display: none;color: #b7ba35;">정령 x 0</label>
-<label class="count_pirate" style="display: none;color: #8f8d64;">해적 x 0</label>
-<label class="count_dragon" style="display: none;color: #e70a0f;">용 x 0</label>
-<label class="count_phantom" style="display: none;color: #ab6043;">유령 x 0</label>
-<label class="count_robot" style="display: none;color: #357788;">로봇 x 0</label>
-<label class="count_exile" style="display: none;color: #343181;">추방자 x 0</label><br>
+<label class="count_demon_no" style="display: inline;color: #ffffff;">악마 x 0 </label>
+<label class="count_demon" style="display: none;color: #2a6392;">악마 x 0 </label> |
+<label class="count_noble_no" style="display: inline;color: #ffffff;">귀족 x 0 </label> 
+<label class="count_noble" style="display: none;color: #b8bcbd;">귀족 x 0 </label> |
+<label class="count_glacial_no" style="display: inline;color: #ffffff;">빙하 x 0</label> 
+<label class="count_glacial" style="display: none;color: #00be00;">빙하 x 0</label> |
+<label class="count_yordle_no" style="display: inline;color: #ffffff;">요들 x 0</label> 
+<label class="count_yordle" style="display: none;color: #801c1b;">요들 x 0</label> |
+<label class="count_wild_no" style="display: inline;color: #ffffff;">야생 x 0</label> 
+<label class="count_wild" style="display: none;color: #66178b;">야생 x 0</label> |
+<label class="count_voids_no" style="display: inline;color: #ffffff;">언데드 x 0</label> 
+<label class="count_voids" style="display: none;color: #3c3f41;">언데드 x 0</label> |
+<label class="count_ninja_no" style="display: inline;color: #ffffff;">닌자 x 0</label> 
+<label class="count_ninja" style="display: none;color: #c12629;">닌자 x 0</label> |
+<label class="count_imperial_no" style="display: inline;color: #ffffff;">제국 x 0</label> 
+<label class="count_imperial" style="display: none;color: #4346c1;">제국 x 0</label> |
+<label class="count_robot_no" style="display: inline;color: #ffffff;">로봇 x 0</label> 
+<label class="count_robot" style="display: none;color: #357788;">로봇 x 0</label> |
+<label class="count_exile_no" style="display: inline;color: #ffffff;">추방자 x 0</label>
+<label class="count_exile" style="display: none;color: #343181;">추방자 x 0</label>|
 
-<label class="count_sorcerer" style="display: none;color: #f3e46e;">마법사 x 0</label>
-<label class="count_assassin" style="display: none;color: #9d9283;">암살자 x 0</label>
-<label class="count_blademaster" style="display: none;color: #6da6b4;">검사 x 0</label>
-<label class="count_knight" style="display: none;color: #797899;">기사 x 0</label>
-<label class="count_brawler" style="display: none;color: #71c891;">싸움꾼 x 0</label>
-<label class="count_gunslinger" style="display: none;color: #b98da1;">총잡이 x 0</label>
-<label class="count_shapeshifter" style="display: none;color: #816a2f;">형상변환자 x 0</label>
-<label class="count_elementalist" style="display: none;color: #8e5428;">원소술사 x 0</label>
-<label class="count_ranger" style="display: none;color: #442a5c;">정찰대 x 0</label>
-<label class="count_guardian" style="display: none;color: #1b3fa6;">수호자 x 0</label>
+<label class="count_dragon_no" style="display: inline;color: #ffffff;">용 x 0</label> 
+<label class="count_dragon" style="display: none;color: #e70a0f;">용 x 0</label> |
+<label class="count_phantom_no" style="display: inline;color: #ffffff;">유령 x 0</label> 
+<label class="count_phantom" style="display: none;color: #ab6043;">유령 x 0</label> |
+<label class="count_pirate_no" style="display: inline;color: #ffffff;">해적 x 0</label> 
+<label class="count_pirate" style="display: none;color: #8f8d64;">해적 x 0</label> | <br>
+
+
+<label class="count_sorcerer_no" style="display: inline;color: #ffffff;">마법사 x 0</label> 
+<label class="count_sorcerer" style="display: none;color: #f3e46e;">마법사 x 0</label> |
+<label class="count_assassin_no" style="display: inline;color: #ffffff;">암살자 x 0</label> 
+<label class="count_assassin" style="display: none;color: #9d9283;">암살자 x 0</label> |
+<label class="count_blademaster_no" style="display: inline;color: #ffffff;">검사 x 0</label> 
+<label class="count_blademaster" style="display: none;color: #6da6b4;">검사 x 0</label> |
+<label class="count_knight_no" style="display: inline;color: #ffffff;">기사 x 0</label> 
+<label class="count_knight" style="display: none;color: #797899;">기사 x 0</label> |
+<label class="count_brawler_no" style="display: inline;color: #ffffff;">싸움꾼 x 0</label> 
+<label class="count_brawler" style="display: none;color: #71c891;">싸움꾼 x 0</label> |
+<label class="count_gunslinger_no" style="display: inline;color: #ffffff;">총잡이 x 0</label> 
+<label class="count_gunslinger" style="display: none;color: #b98da1;">총잡이 x 0</label> |
+<label class="count_shapeshifter_no" style="display: inline;color: #ffffff;">형상변환자 x 0</label> 
+<label class="count_shapeshifter" style="display: none;color: #816a2f;">형상변환자 x 0</label> |
+<label class="count_elementalist_no" style="display: inline;color: #ffffff;">원소술사 x 0</label> 
+<label class="count_elementalist" style="display: none;color: #8e5428;">원소술사 x 0</label> |
+<label class="count_ranger_no" style="display: inline;color: #ffffff;">정찰대 x 0</label> 
+<label class="count_ranger" style="display: none;color: #442a5c;">정찰대 x 0</label> |
+<label class="count_guardian_no" style="display: inline;color: #ffffff;">수호자 x 0</label> 
+<label class="count_guardian" style="display: none;color: #1b3fa6;">수호자 x 0</label> |
+
+
 
 <br>
 
