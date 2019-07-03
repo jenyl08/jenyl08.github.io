@@ -784,156 +784,907 @@
 
         star_ = 1;
 
+        var selected_champ = []
+
         $(function() {
             $('.garen').mousedown(function(e) {
                 potrait_opacity(garen, e.which);
+                var selected_champ_idx = selected_champ.indexOf('garen')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("garen")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.graves').mousedown(function(e) {
                 potrait_opacity(graves, e.which);
+                var selected_champ_idx = selected_champ.indexOf('graves')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("graves")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.nidalee').mousedown(function(e) {
                 potrait_opacity(nidalee, e.which);
+                var selected_champ_idx = selected_champ.indexOf('nidalee')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("nidalee")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.darius').mousedown(function(e) {
                 potrait_opacity(darius, e.which);
+                var selected_champ_idx = selected_champ.indexOf('darius')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("darius")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.mordekaiser').mousedown(function(e) {
                 potrait_opacity(mordekaiser, e.which);
+                var selected_champ_idx = selected_champ.indexOf('mordekaiser')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("mordekaiser")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.vayne').mousedown(function(e) {
                 potrait_opacity(vayne, e.which);
+                var selected_champ_idx = selected_champ.indexOf('vayne')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("vayne")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.warwick').mousedown(function(e) {
                 potrait_opacity(warwick, e.which);
+                var selected_champ_idx = selected_champ.indexOf('warwick')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("warwick")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.kassadin').mousedown(function(e) {
                 potrait_opacity(kassadin, e.which);
+                var selected_champ_idx = selected_champ.indexOf('kassadin')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("kassadin")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.khazix').mousedown(function(e) {
                 potrait_opacity(khazix, e.which);
+                var selected_champ_idx = selected_champ.indexOf('khazix')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("khazix")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.tristana').mousedown(function(e) {
                 potrait_opacity(tristana, e.which);
+                var selected_champ_idx = selected_champ.indexOf('tristana')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("tristana")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.fiora').mousedown(function(e) {
                 potrait_opacity(fiora, e.which);
+                var selected_champ_idx = selected_champ.indexOf('fiora')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("fiora")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.reksai').mousedown(function(e) {
                 potrait_opacity(reksai, e.which);
+                var selected_champ_idx = selected_champ.indexOf('reksai')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("reksai")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.lucian').mousedown(function(e) {
                 potrait_opacity(lucian, e.which);
+                var selected_champ_idx = selected_champ.indexOf('lucian')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("lucian")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.lulu').mousedown(function(e) {
                 potrait_opacity(lulu, e.which);
+                var selected_champ_idx = selected_champ.indexOf('lulu')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("lulu")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.lissandra').mousedown(function(e) {
                 potrait_opacity(lissandra, e.which);
+                var selected_champ_idx = selected_champ.indexOf('lissandra')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("lissandra")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.varus').mousedown(function(e) {
                 potrait_opacity(varus, e.which);
+                var selected_champ_idx = selected_champ.indexOf('varus')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("varus")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.braum').mousedown(function(e) {
                 potrait_opacity(braum, e.which);
+                var selected_champ_idx = selected_champ.indexOf('braum')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("braum")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.blitzcrank').mousedown(function(e) {
                 potrait_opacity(blitzcrank, e.which);
+                var selected_champ_idx = selected_champ.indexOf('blitzcrank')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("blitzcrank")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.shen').mousedown(function(e) {
                 potrait_opacity(shen, e.which);
+                var selected_champ_idx = selected_champ.indexOf('shen')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("shen")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.ahri').mousedown(function(e) {
                 potrait_opacity(ahri, e.which);
+                var selected_champ_idx = selected_champ.indexOf('ahri')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("ahri")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.elise').mousedown(function(e) {
                 potrait_opacity(elise, e.which);
+                var selected_champ_idx = selected_champ.indexOf('elise')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("elise")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.zed').mousedown(function(e) {
                 potrait_opacity(zed, e.which);
+                var selected_champ_idx = selected_champ.indexOf('zed')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("zed")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.pyke').mousedown(function(e) {
                 potrait_opacity(pyke, e.which);
+                var selected_champ_idx = selected_champ.indexOf('pyke')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("pyke")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.gangplank').mousedown(function(e) {
                 potrait_opacity(gangplank, e.which);
+                var selected_champ_idx = selected_champ.indexOf('gangplank')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("gangplank")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.rengar').mousedown(function(e) {
                 potrait_opacity(rengar, e.which);
+                var selected_champ_idx = selected_champ.indexOf('rengar')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("rengar")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.morgana').mousedown(function(e) {
                 potrait_opacity(morgana, e.which);
+                var selected_champ_idx = selected_champ.indexOf('morgana')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("morgana")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.veigar').mousedown(function(e) {
                 potrait_opacity(veigar, e.which);
+                var selected_champ_idx = selected_champ.indexOf('veigar')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("veigar")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.volibear').mousedown(function(e) {
                 potrait_opacity(volibear, e.which);
+                var selected_champ_idx = selected_champ.indexOf('volibear')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("volibear")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.poppy').mousedown(function(e) {
                 potrait_opacity(poppy, e.which);
+                var selected_champ_idx = selected_champ.indexOf('poppy')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("poppy")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.shyvana').mousedown(function(e) {
                 potrait_opacity(shyvana, e.which);
+                var selected_champ_idx = selected_champ.indexOf('shyvana')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("shyvana")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.aatrox').mousedown(function(e) {
                 potrait_opacity(aatrox, e.which);
+                var selected_champ_idx = selected_champ.indexOf('aatrox')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("aatrox")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.ashe').mousedown(function(e) {
                 potrait_opacity(ashe, e.which);
+                var selected_champ_idx = selected_champ.indexOf('ashe')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("ashe")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.evelynn').mousedown(function(e) {
                 potrait_opacity(evelynn, e.which);
+                var selected_champ_idx = selected_champ.indexOf('evelynn')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("evelynn")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.katarina').mousedown(function(e) {
                 potrait_opacity(katarina, e.which);
+                var selected_champ_idx = selected_champ.indexOf('katarina')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("katarina")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.kennen').mousedown(function(e) {
                 potrait_opacity(kennen, e.which);
+                var selected_champ_idx = selected_champ.indexOf('kennen')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("kennen")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.gnar').mousedown(function(e) {
                 potrait_opacity(gnar, e.which);
+                var selected_champ_idx = selected_champ.indexOf('gnar')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("gnar")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.draven').mousedown(function(e) {
                 potrait_opacity(draven, e.which);
+                var selected_champ_idx = selected_champ.indexOf('draven')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("draven")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.leona').mousedown(function(e) {
                 potrait_opacity(leona, e.which);
+                var selected_champ_idx = selected_champ.indexOf('leona')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("leona")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.brand').mousedown(function(e) {
                 potrait_opacity(brand, e.which);
+                var selected_champ_idx = selected_champ.indexOf('brand')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("brand")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.sejuani').mousedown(function(e) {
                 potrait_opacity(sejuani, e.which);
+                var selected_champ_idx = selected_champ.indexOf('sejuani')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("sejuani")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.aurelionsol').mousedown(function(e) {
                 potrait_opacity(aurelionsol, e.which);
+                var selected_champ_idx = selected_champ.indexOf('aurelionsol')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("aurelionsol")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.akali').mousedown(function(e) {
                 potrait_opacity(akali, e.which);
+                var selected_champ_idx = selected_champ.indexOf('akali')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("akali")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.chogath').mousedown(function(e) {
                 potrait_opacity(chogath, e.which);
+                var selected_champ_idx = selected_champ.indexOf('chogath')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("chogath")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.kindred').mousedown(function(e) {
                 potrait_opacity(kindred, e.which);
+                var selected_champ_idx = selected_champ.indexOf('kindred')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("kindred")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.missfortune').mousedown(function(e) {
                 potrait_opacity(missfortune, e.which);
+                var selected_champ_idx = selected_champ.indexOf('missfortune')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("missfortune")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.swain').mousedown(function(e) {
                 potrait_opacity(swain, e.which);
+                var selected_champ_idx = selected_champ.indexOf('swain')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("swain")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.yasuo').mousedown(function(e) {
                 potrait_opacity(yasuo, e.which);
+                var selected_champ_idx = selected_champ.indexOf('yasuo')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("yasuo")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.anivia').mousedown(function(e) {
                 potrait_opacity(anivia, e.which);
+                var selected_champ_idx = selected_champ.indexOf('anivia')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("anivia")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.karthus').mousedown(function(e) {
                 potrait_opacity(karthus, e.which);
+                var selected_champ_idx = selected_champ.indexOf('karthus')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("karthus")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
+
             $('.kayle').mousedown(function(e) {
                 potrait_opacity(kayle, e.which);
+                var selected_champ_idx = selected_champ.indexOf('kayle')
+                if (selected_champ_idx > -1) {
+                    selected_champ.splice(selected_champ_idx, 1)
+                } else {
+                    selected_champ.push("kayle")
+                }
+                if (selected_champ.length == 0) {
+                    document.getElementById("selected_champ").innerHTML = '<img src = "pieces/nochamp.png" style="width:100px;height:100px">'
+                } else {
+                    document.getElementById("selected_champ").innerHTML = ""
+                    for (var i = 0; i < selected_champ.length; i++) {
+                        document.getElementById("selected_champ").innerHTML += '<img src="pieces/' + selected_champ[i] + '.png" style="width:100px;height:100px">';
+                    }
+                }
             });
 
             $('.info_icon').mouseover(function() {
@@ -942,6 +1693,7 @@
             $('.info_icon').mouseout(function() {
                 $(this).css('opacity', '0.5');
             });
+
             $('.info_icon').click(function() {
                 $('#' + $(this).next('div').attr('class').substr(14) + '_info').bPopup({
                     follow: [false, false], //x, y
@@ -1785,115 +2537,15 @@
                 lv = pieces_num
             }
             document.getElementById("init_prob").innerHTML = "현재 레벨 " + lv;
-            //for(var i=0; i<all_champ.length; i++) {
-            //	document.getElementById(all_champ[i] + '_prob').innerHTML = tier_prob[ch2t.get(all_champ[i])][lv];
-            //}
+            for (var i = 0; i < all_champ.length; i++) {
+                document.getElementById(all_champ[i] + '_prob_1').innerHTML = tier_prob[ch2t.get(all_champ[i])][lv];
+                document.getElementById(all_champ[i] + '_prob_2').innerHTML = tier_prob[ch2t.get(all_champ[i])][lv];
+            }
             //무조건 다 써야되고, 유니크하게만 되서 전부 다 따로 나눈다.
 
             //케넨, 나르, 스웨인, 갱플랭크는 3가지 케이스가 있다. 
             //케넨 닌자 - 3, 나르 - 야생 3, 스웨인 제국 -3 갱플랭크 총잡이 - 3 으로 잡고,
             //출신을 1, 직업을 2로 하겠다.
-            document.getElementById('garen_prob_1').innerHTML = tier_prob[ch2t.get('garen')][lv];
-            document.getElementById('graves_prob_1').innerHTML = tier_prob[ch2t.get('graves')][lv];
-            document.getElementById('nidalee_prob_1').innerHTML = tier_prob[ch2t.get('nidalee')][lv];
-            document.getElementById('darius_prob_1').innerHTML = tier_prob[ch2t.get('darius')][lv];
-            document.getElementById('mordekaiser_prob_1').innerHTML = tier_prob[ch2t.get('mordekaiser')][lv];
-            document.getElementById('vayne_prob_1').innerHTML = tier_prob[ch2t.get('vayne')][lv];
-            document.getElementById('warwick_prob_1').innerHTML = tier_prob[ch2t.get('warwick')][lv];
-            document.getElementById('kassadin_prob_1').innerHTML = tier_prob[ch2t.get('kassadin')][lv];
-            document.getElementById('khazix_prob_1').innerHTML = tier_prob[ch2t.get('khazix')][lv];
-            document.getElementById('tristana_prob_1').innerHTML = tier_prob[ch2t.get('tristana')][lv];
-            document.getElementById('fiora_prob_1').innerHTML = tier_prob[ch2t.get('fiora')][lv];
-            document.getElementById('reksai_prob_1').innerHTML = tier_prob[ch2t.get('reksai')][lv];
-            document.getElementById('lucian_prob_1').innerHTML = tier_prob[ch2t.get('lucian')][lv];
-            document.getElementById('lulu_prob_1').innerHTML = tier_prob[ch2t.get('lulu')][lv];
-            document.getElementById('lissandra_prob_1').innerHTML = tier_prob[ch2t.get('lissandra')][lv];
-            document.getElementById('varus_prob_1').innerHTML = tier_prob[ch2t.get('varus')][lv];
-            document.getElementById('braum_prob_1').innerHTML = tier_prob[ch2t.get('braum')][lv];
-            document.getElementById('blitzcrank_prob_1').innerHTML = tier_prob[ch2t.get('blitzcrank')][lv];
-            document.getElementById('shen_prob_1').innerHTML = tier_prob[ch2t.get('shen')][lv];
-            document.getElementById('ahri_prob_1').innerHTML = tier_prob[ch2t.get('ahri')][lv];
-            document.getElementById('elise_prob_1').innerHTML = tier_prob[ch2t.get('elise')][lv];
-            document.getElementById('zed_prob_1').innerHTML = tier_prob[ch2t.get('zed')][lv];
-            document.getElementById('pyke_prob_1').innerHTML = tier_prob[ch2t.get('pyke')][lv];
-            document.getElementById('gangplank_prob_1').innerHTML = tier_prob[ch2t.get('gangplank')][lv];
-            document.getElementById('rengar_prob_1').innerHTML = tier_prob[ch2t.get('rengar')][lv];
-            document.getElementById('morgana_prob_1').innerHTML = tier_prob[ch2t.get('morgana')][lv];
-            document.getElementById('veigar_prob_1').innerHTML = tier_prob[ch2t.get('veigar')][lv];
-            document.getElementById('volibear_prob_1').innerHTML = tier_prob[ch2t.get('volibear')][lv];
-            document.getElementById('poppy_prob_1').innerHTML = tier_prob[ch2t.get('poppy')][lv];
-            document.getElementById('shyvana_prob_1').innerHTML = tier_prob[ch2t.get('shyvana')][lv];
-            document.getElementById('aatrox_prob_1').innerHTML = tier_prob[ch2t.get('aatrox')][lv];
-            document.getElementById('ashe_prob_1').innerHTML = tier_prob[ch2t.get('ashe')][lv];
-            document.getElementById('evelynn_prob_1').innerHTML = tier_prob[ch2t.get('evelynn')][lv];
-            document.getElementById('katarina_prob_1').innerHTML = tier_prob[ch2t.get('katarina')][lv];
-            document.getElementById('kennen_prob_1').innerHTML = tier_prob[ch2t.get('kennen')][lv];
-            document.getElementById('gnar_prob_1').innerHTML = tier_prob[ch2t.get('gnar')][lv];
-            document.getElementById('draven_prob_1').innerHTML = tier_prob[ch2t.get('draven')][lv];
-            document.getElementById('leona_prob_1').innerHTML = tier_prob[ch2t.get('leona')][lv];
-            document.getElementById('brand_prob_1').innerHTML = tier_prob[ch2t.get('brand')][lv];
-            document.getElementById('sejuani_prob_1').innerHTML = tier_prob[ch2t.get('sejuani')][lv];
-            document.getElementById('aurelionsol_prob_1').innerHTML = tier_prob[ch2t.get('aurelionsol')][lv];
-            document.getElementById('akali_prob_1').innerHTML = tier_prob[ch2t.get('akali')][lv];
-            document.getElementById('chogath_prob_1').innerHTML = tier_prob[ch2t.get('chogath')][lv];
-            document.getElementById('kindred_prob_1').innerHTML = tier_prob[ch2t.get('kindred')][lv];
-            document.getElementById('missfortune_prob_1').innerHTML = tier_prob[ch2t.get('missfortune')][lv];
-            document.getElementById('swain_prob_1').innerHTML = tier_prob[ch2t.get('swain')][lv];
-            document.getElementById('yasuo_prob_1').innerHTML = tier_prob[ch2t.get('yasuo')][lv];
-            document.getElementById('anivia_prob_1').innerHTML = tier_prob[ch2t.get('anivia')][lv];
-            document.getElementById('karthus_prob_1').innerHTML = tier_prob[ch2t.get('karthus')][lv];
-            document.getElementById('kayle_prob_1').innerHTML = tier_prob[ch2t.get('kayle')][lv];
-
-            document.getElementById('garen_prob_2').innerHTML = tier_prob[ch2t.get('garen')][lv];
-            document.getElementById('graves_prob_2').innerHTML = tier_prob[ch2t.get('graves')][lv];
-            document.getElementById('nidalee_prob_2').innerHTML = tier_prob[ch2t.get('nidalee')][lv];
-            document.getElementById('darius_prob_2').innerHTML = tier_prob[ch2t.get('darius')][lv];
-            document.getElementById('mordekaiser_prob_2').innerHTML = tier_prob[ch2t.get('mordekaiser')][lv];
-            document.getElementById('vayne_prob_2').innerHTML = tier_prob[ch2t.get('vayne')][lv];
-            document.getElementById('warwick_prob_2').innerHTML = tier_prob[ch2t.get('warwick')][lv];
-            document.getElementById('kassadin_prob_2').innerHTML = tier_prob[ch2t.get('kassadin')][lv];
-            document.getElementById('khazix_prob_2').innerHTML = tier_prob[ch2t.get('khazix')][lv];
-            document.getElementById('tristana_prob_2').innerHTML = tier_prob[ch2t.get('tristana')][lv];
-            document.getElementById('fiora_prob_2').innerHTML = tier_prob[ch2t.get('fiora')][lv];
-            document.getElementById('reksai_prob_2').innerHTML = tier_prob[ch2t.get('reksai')][lv];
-            document.getElementById('lucian_prob_2').innerHTML = tier_prob[ch2t.get('lucian')][lv];
-            document.getElementById('lulu_prob_2').innerHTML = tier_prob[ch2t.get('lulu')][lv];
-            document.getElementById('lissandra_prob_2').innerHTML = tier_prob[ch2t.get('lissandra')][lv];
-            document.getElementById('varus_prob_2').innerHTML = tier_prob[ch2t.get('varus')][lv];
-            document.getElementById('braum_prob_2').innerHTML = tier_prob[ch2t.get('braum')][lv];
-            document.getElementById('blitzcrank_prob_2').innerHTML = tier_prob[ch2t.get('blitzcrank')][lv];
-            document.getElementById('shen_prob_2').innerHTML = tier_prob[ch2t.get('shen')][lv];
-            document.getElementById('ahri_prob_2').innerHTML = tier_prob[ch2t.get('ahri')][lv];
-            document.getElementById('elise_prob_2').innerHTML = tier_prob[ch2t.get('elise')][lv];
-            document.getElementById('zed_prob_2').innerHTML = tier_prob[ch2t.get('zed')][lv];
-            document.getElementById('pyke_prob_2').innerHTML = tier_prob[ch2t.get('pyke')][lv];
-            document.getElementById('gangplank_prob_2').innerHTML = tier_prob[ch2t.get('gangplank')][lv];
-            document.getElementById('rengar_prob_2').innerHTML = tier_prob[ch2t.get('rengar')][lv];
-            document.getElementById('morgana_prob_2').innerHTML = tier_prob[ch2t.get('morgana')][lv];
-            document.getElementById('veigar_prob_2').innerHTML = tier_prob[ch2t.get('veigar')][lv];
-            document.getElementById('volibear_prob_2').innerHTML = tier_prob[ch2t.get('volibear')][lv];
-            document.getElementById('poppy_prob_2').innerHTML = tier_prob[ch2t.get('poppy')][lv];
-            document.getElementById('shyvana_prob_2').innerHTML = tier_prob[ch2t.get('shyvana')][lv];
-            document.getElementById('aatrox_prob_2').innerHTML = tier_prob[ch2t.get('aatrox')][lv];
-            document.getElementById('ashe_prob_2').innerHTML = tier_prob[ch2t.get('ashe')][lv];
-            document.getElementById('evelynn_prob_2').innerHTML = tier_prob[ch2t.get('evelynn')][lv];
-            document.getElementById('katarina_prob_2').innerHTML = tier_prob[ch2t.get('katarina')][lv];
-            document.getElementById('kennen_prob_2').innerHTML = tier_prob[ch2t.get('kennen')][lv];
-            document.getElementById('gnar_prob_2').innerHTML = tier_prob[ch2t.get('gnar')][lv];
-            document.getElementById('draven_prob_2').innerHTML = tier_prob[ch2t.get('draven')][lv];
-            document.getElementById('leona_prob_2').innerHTML = tier_prob[ch2t.get('leona')][lv];
-            document.getElementById('brand_prob_2').innerHTML = tier_prob[ch2t.get('brand')][lv];
-            document.getElementById('sejuani_prob_2').innerHTML = tier_prob[ch2t.get('sejuani')][lv];
-            document.getElementById('aurelionsol_prob_2').innerHTML = tier_prob[ch2t.get('aurelionsol')][lv];
-            document.getElementById('akali_prob_2').innerHTML = tier_prob[ch2t.get('akali')][lv];
-            document.getElementById('chogath_prob_2').innerHTML = tier_prob[ch2t.get('chogath')][lv];
-            document.getElementById('kindred_prob_2').innerHTML = tier_prob[ch2t.get('kindred')][lv];
-            document.getElementById('missfortune_prob_2').innerHTML = tier_prob[ch2t.get('missfortune')][lv];
-            document.getElementById('swain_prob_2').innerHTML = tier_prob[ch2t.get('swain')][lv];
-            document.getElementById('yasuo_prob_2').innerHTML = tier_prob[ch2t.get('yasuo')][lv];
-            document.getElementById('anivia_prob_2').innerHTML = tier_prob[ch2t.get('anivia')][lv];
-            document.getElementById('karthus_prob_2').innerHTML = tier_prob[ch2t.get('karthus')][lv];
-            document.getElementById('kayle_prob_2').innerHTML = tier_prob[ch2t.get('kayle')][lv];
 
             document.getElementById('swain_prob_3').innerHTML = tier_prob[ch2t.get('swain')][lv];
             document.getElementById('kennen_prob_3').innerHTML = tier_prob[ch2t.get('kennen')][lv];
@@ -1906,6 +2558,13 @@
     <div style="float: right;display: inline; text-align: right;"><a href="http://autochess.kro.kr/main">http://autochess.kro.kr/main</a> 기반으로 만듬<span style="font-size:18px"><br>문의는 jenyl08@gmail.com 로. 업데이트 해볼까함</span></div>
 
     <p>
+	업데이트 내역 <br>
+	- 2019년 7월 2일 : 시너지 창 제작<br>
+	- 2019년 7월 3일 : 현재 레벨과 캐릭터 뽑을 확률 표시, 댓글 기능 추가<br>
+	- 2019년 7월 4일 : 선택한 캐릭터를 가장 위에 표시<br>
+	- 차후 업데이트 필요 사항 : 가장 위에 표시한 캐릭터 ui 변경(급하게 만드느라 안 좋은거 같음)<br>
+	- 차후 업데이트 필요 사항 : 아이템 관련된 기능(조합표? 라던가 우선 ui 구상 필요)<br>
+	
         <table border="1">
             <tr>
                 <!-- 첫번째 줄 시작 -->
@@ -1945,6 +2604,9 @@
         </div>
         <br><b>
 
+<span id = "selected_champ"><img src = "pieces\nochamp.png" style="width:100px;height:100px"></span>
+<br>
+
 <label class="count_demon" style="display: none;color: #2a6392;">악마 x 0</label>
 <label class="count_noble" style="display: none;color: #b8bcbd;">귀족 x 0</label>
 <label class="count_glacial" style="display: none;color: #00be00;">빙하 x 0</label>
@@ -1972,6 +2634,7 @@
 <label class="count_guardian" style="display: none;color: #1b3fa6;">수호자 x 0</label>
 
 <br>
+
 </b>
         <br>
         <table style="display:inline;">
@@ -1986,49 +2649,56 @@
                     <div class="pieces cost_2 varus">
                         <div class="tier tier_a">a</div><img src=pieces\varus.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 정찰대">바루스 <span id="varus_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 정찰대">바루스 <span id="varus_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 elise">
                         <div class="tier tier_a">a</div><img src=pieces\elise.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 형상변환자">앨리스 <span id="elise_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 형상변환자">앨리스 <span id="elise_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 aatrox">
                         <div class="tier tier_a">a</div><img src=pieces\aatrox.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 검사">아트록스 <span id="aatrox_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 검사">아트록스 <span id="aatrox_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 morgana">
                         <div class="tier tier_a">a</div><img src=pieces\morgana.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 마법사">모르가나 <span id="morgana_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 마법사">모르가나 <span id="morgana_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 evelynn">
                         <div class="tier tier_a">a</div><img src=pieces\evelynn.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 암살자">이블린 <span id="evelynn_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 암살자">이블린 <span id="evelynn_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 brand">
                         <div class="tier tier_a">a</div><img src=pieces\brand.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 원소술사">브랜드 <span id="brand_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 원소술사">브랜드 <span id="brand_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 swain">
                         <div class="tier tier_a">a</div><img src=pieces\swain.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마,제국 형상변환자">스웨인 <span id="swain_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="악마,제국 형상변환자">스웨인 <span id="swain_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2043,42 +2713,48 @@
                     <div class="pieces cost_1 garen">
                         <div class="tier tier_a">a</div><img src=pieces\garen.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 기사">가렌 <span id="garen_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 기사">가렌 <span id="garen_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_1 vayne">
                         <div class="tier tier_a">a</div><img src=pieces\vayne.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 정찰대">베인 <span id="vayne_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 정찰대">베인 <span id="vayne_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_1 fiora">
                         <div class="tier tier_a">a</div><img src=pieces\fiora.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 검사">피오라 <span id="fiora_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 검사">피오라 <span id="fiora_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 lucian">
                         <div class="tier tier_a">a</div><img src=pieces\lucian.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 총잡이">루시안 <span id="lucian_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 총잡이">루시안 <span id="lucian_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 leona">
                         <div class="tier tier_a">a</div><img src=pieces\leona.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 수호자">레오나 <span id="leona_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 수호자">레오나 <span id="leona_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 kayle">
                         <div class="tier tier_a">a</div><img src=pieces\kayle.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 기사">케일 <span id="kayle_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 기사">케일 <span id="kayle_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2093,42 +2769,48 @@
                     <div class="pieces cost_2 lissandra">
                         <div class="tier tier_a">a</div><img src=pieces\lissandra.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 원소술사">리산드라 <span id="lissandra_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 원소술사">리산드라 <span id="lissandra_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 braum">
                         <div class="tier tier_a">a</div><img src=pieces\braum.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 수호자">브라움 <span id="braum_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 수호자">브라움 <span id="braum_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 volibear">
                         <div class="tier tier_a">a</div><img src=pieces\volibear.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 싸움꾼">볼리베어 <span id="volibear_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 싸움꾼">볼리베어 <span id="volibear_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 ashe">
                         <div class="tier tier_a">a</div><img src=pieces\ashe.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 정찰대">애쉬 <span id="ashe_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 정찰대">애쉬 <span id="ashe_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 sejuani">
                         <div class="tier tier_a">a</div><img src=pieces\sejuani.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 기사">세주아니 <span id="sejuani_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 기사">세주아니 <span id="sejuani_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 anivia">
                         <div class="tier tier_a">a</div><img src=pieces\anivia.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 원소술사">애니비아 <span id="anivia_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 원소술사">애니비아 <span id="anivia_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2143,42 +2825,48 @@
                     <div class="pieces cost_1 tristana">
                         <div class="tier tier_a">a</div><img src=pieces\tristana.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="요들 총잡이">트리스타나 <span id="tristana_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="요들 총잡이">트리스타나 <span id="tristana_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 lulu">
                         <div class="tier tier_a">a</div><img src=pieces\lulu.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="요들 마법사">룰루 <span id="lulu_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="요들 마법사">룰루 <span id="lulu_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 veigar">
                         <div class="tier tier_a">a</div><img src=pieces\veigar.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="요들 마법사">베이가 <span id="veigar_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="요들 마법사">베이가 <span id="veigar_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 poppy">
                         <div class="tier tier_a">a</div><img src=pieces\poppy.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="요들 기사">뽀삐 <span id="poppy_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="요들 기사">뽀삐 <span id="poppy_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 kennen">
                         <div class="tier tier_a">a</div><img src=pieces\kennen.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="닌자,요들 원소술사">케넨 <span id="kennen_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="닌자,요들 원소술사">케넨 <span id="kennen_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 gnar">
                         <div class="tier tier_a">a</div><img src=pieces\gnar.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생,요들 형상변환자">나르 <span id="gnar_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="야생,요들 형상변환자">나르 <span id="gnar_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td></td>
@@ -2192,7 +2880,8 @@
                     <div class="pieces cost_2 blitzcrank">
                         <div class="tier tier_a">a</div><img src=pieces\blitzcrank.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="로봇 싸움꾼">블리츠크랭크 <span id="blitzcrank_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="로봇 싸움꾼">블리츠크랭크 <span id="blitzcrank_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2207,35 +2896,40 @@
                     <div class="pieces cost_1 nidalee">
                         <div class="tier tier_a">a</div><img src=pieces\nidalee.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생 형상변환자">니달리 <span id="nidalee_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="야생 형상변환자">니달리 <span id="nidalee_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_1 warwick">
                         <div class="tier tier_a">a</div><img src=pieces\warwick.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생 싸움꾼">워윅 <span id="warwick_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="야생 싸움꾼">워윅 <span id="warwick_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 ahri">
                         <div class="tier tier_a">a</div><img src=pieces\ahri.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생 마법사">아리 <span id="ahri_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="야생 마법사">아리 <span id="ahri_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 rengar">
                         <div class="tier tier_a">a</div><img src=pieces\rengar.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생 암살자">렝가 <span id="rengar_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="야생 암살자">렝가 <span id="rengar_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 gnar">
                         <div class="tier tier_a">a</div><img src=pieces\gnar.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생,요들 형상변환자">나르 <span id="gnar_prob_3">0%</span></span></div>
+                            <br><span data-tooltip-text="야생,요들 형상변환자">나르 <span id="gnar_prob_3">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td></td>
@@ -2250,7 +2944,8 @@
                     <div class="pieces cost_5 yasuo">
                         <div class="tier tier_a">a</div><img src=pieces\yasuo.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="추방자 검사">야스오 <span id="yasuo_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="추방자 검사">야스오 <span id="yasuo_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2265,28 +2960,32 @@
                     <div class="pieces cost_1 kassadin">
                         <div class="tier tier_a">a</div><img src=pieces\kassadin.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="공허 마법사">카사딘 <span id="kassadin_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="공허 마법사">카사딘 <span id="kassadin_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_1 khazix">
                         <div class="tier tier_a">a</div><img src=pieces\khazix.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="공허 암살자">카직스 <span id="khazix_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="공허 암살자">카직스 <span id="khazix_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 reksai">
                         <div class="tier tier_a">a</div><img src=pieces\reksai.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="공허 싸움꾼">렉사이 <span id="reksai_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="공허 싸움꾼">렉사이 <span id="reksai_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 chogath">
                         <div class="tier tier_a">a</div><img src=pieces\chogath.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="공허 싸움꾼">초가스 <span id="chogath_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="공허 싸움꾼">초가스 <span id="chogath_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td></td>
@@ -2301,14 +3000,16 @@
                     <div class="pieces cost_3 shyvana">
                         <div class="tier tier_a">a</div><img src=pieces\shyvana.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="용 형상변환자">쉬바나 <span id="shyvana_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="용 형상변환자">쉬바나 <span id="shyvana_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 aurelionsol">
                         <div class="tier tier_a">a</div><img src=pieces\aurelionsol.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="용 마법사">아우렐리온 솔 <span id="aurelionsol_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="용 마법사">아우렐리온 솔 <span id="aurelionsol_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2323,28 +3024,32 @@
                     <div class="pieces cost_2 shen">
                         <div class="tier tier_a">a</div><img src=pieces\shen.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="닌자 검사">쉔 <span id="shen_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="닌자 검사">쉔 <span id="shen_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 zed">
                         <div class="tier tier_a">a</div><img src=pieces\zed.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="닌자 암살자">제드 <span id="zed_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="닌자 암살자">제드 <span id="zed_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 kennen">
                         <div class="tier tier_a">a</div><img src=pieces\kennen.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="닌자,요들 원소술사">케넨 <span id="kennen_prob_3">0%</span></span></div>
+                            <br><span data-tooltip-text="닌자,요들 원소술사">케넨 <span id="kennen_prob_3">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 akali">
                         <div class="tier tier_a">a</div><img src=pieces\akali.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="닌자 암살자">아칼리 <span id="akali_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="닌자 암살자">아칼리 <span id="akali_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td></td>
@@ -2358,21 +3063,24 @@
                     <div class="pieces cost_1 mordekaiser">
                         <div class="tier tier_a">a</div><img src=pieces\mordekaiser.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="유령 기사">모데카이저 <span id="mordekaiser_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="유령 기사">모데카이저 <span id="mordekaiser_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 kindred">
                         <div class="tier tier_a">a</div><img src=pieces\kindred.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="유령 정찰대">킨드레드 <span id="kindred_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="유령 정찰대">킨드레드 <span id="kindred_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 karthus">
                         <div class="tier tier_a">a</div><img src=pieces\karthus.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="유령 마법사">카서스 <span id="karthus_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="유령 마법사">카서스 <span id="karthus_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2387,28 +3095,32 @@
                     <div class="pieces cost_1 darius">
                         <div class="tier tier_a">a</div><img src=pieces\darius.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="제국 기사">다리우스 <span id="darius_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="제국 기사">다리우스 <span id="darius_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 katarina">
                         <div class="tier tier_a">a</div><img src=pieces\katarina.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="제국 암살자">카타리나 <span id="katarina_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="제국 암살자">카타리나 <span id="katarina_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 draven">
                         <div class="tier tier_a">a</div><img src=pieces\draven.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="제국 검사">드레이븐 <span id="draven_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="제국 검사">드레이븐 <span id="draven_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 swain">
                         <div class="tier tier_a">a</div><img src=pieces\swain.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마,제국 형상변환자">스웨인 <span id="swain_prob_3">0%</span></span></div>
+                            <br><span data-tooltip-text="악마,제국 형상변환자">스웨인 <span id="swain_prob_3">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td id="pirate">
@@ -2421,28 +3133,32 @@
                     <div class="pieces cost_1 graves">
                         <div class="tier tier_a">a</div><img src=pieces\graves.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="해적 총잡이">그레이브즈 <span id="graves_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="해적 총잡이">그레이브즈 <span id="graves_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 pyke">
                         <div class="tier tier_a">a</div><img src=pieces\pyke.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="해적 암살자">파이크 <span id="pyke_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="해적 암살자">파이크 <span id="pyke_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 gangplank">
                         <div class="tier tier_a">a</div><img src=pieces\gangplank.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="해적 검사,총잡이">갱플랭크 <span id="gangplank_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="해적 검사,총잡이">갱플랭크 <span id="gangplank_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 missfortune">
                         <div class="tier tier_a">a</div><img src=pieces\missfortune.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="해적 총잡이">미스포츈 <span id="missfortune_prob_1">0%</span></span></div>
+                            <br><span data-tooltip-text="해적 총잡이">미스포츈 <span id="missfortune_prob_1">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2459,49 +3175,56 @@
                     <div class="pieces cost_1 kassadin">
                         <div class="tier tier_a">a</div><img src=pieces\kassadin.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="공허 마법사">카사딘 <span id="kassadin_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="공허 마법사">카사딘 <span id="kassadin_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 ahri">
                         <div class="tier tier_a">a</div><img src=pieces\ahri.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생 마법사">아리 <span id="ahri_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="야생 마법사">아리 <span id="ahri_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 lulu">
                         <div class="tier tier_a">a</div><img src=pieces\lulu.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="요들 마법사">룰루 <span id="lulu_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="요들 마법사">룰루 <span id="lulu_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 morgana">
                         <div class="tier tier_a">a</div><img src=pieces\morgana.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 마법사">모르가나 <span id="morgana_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 마법사">모르가나 <span id="morgana_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 veigar">
                         <div class="tier tier_a">a</div><img src=pieces\veigar.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="요들 마법사">베이가 <span id="veigar_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="요들 마법사">베이가 <span id="veigar_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 aurelionsol">
                         <div class="tier tier_a">a</div><img src=pieces\aurelionsol.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="용 마법사">아우렐리온 솔 <span id="aurelionsol_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="용 마법사">아우렐리온 솔 <span id="aurelionsol_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 karthus">
                         <div class="tier tier_a">a</div><img src=pieces\karthus.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="유령 마법사">카서스 <span id="karthus_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="유령 마법사">카서스 <span id="karthus_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2516,49 +3239,56 @@
                     <div class="pieces cost_1 khazix">
                         <div class="tier tier_a">a</div><img src=pieces\khazix.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="공허 암살자">카직스 <span id="khazix_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="공허 암살자">카직스 <span id="khazix_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 zed">
                         <div class="tier tier_a">a</div><img src=pieces\zed.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="닌자 암살자">제드 <span id="zed_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="닌자 암살자">제드 <span id="zed_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 pyke">
                         <div class="tier tier_a">a</div><img src=pieces\pyke.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="해적 암살자">파이크 <span id="pyke_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="해적 암살자">파이크 <span id="pyke_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 rengar">
                         <div class="tier tier_a">a</div><img src=pieces\rengar.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생 암살자">렝가 <span id="rengar_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="야생 암살자">렝가 <span id="rengar_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 evelynn">
                         <div class="tier tier_a">a</div><img src=pieces\evelynn.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 암살자">이블린 <span id="evelynn_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 암살자">이블린 <span id="evelynn_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 katarina">
                         <div class="tier tier_a">a</div><img src=pieces\katarina.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="제국 암살자">카타리나 <span id="katarina_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="제국 암살자">카타리나 <span id="katarina_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 akali">
                         <div class="tier tier_a">a</div><img src=pieces\akali.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="닌자 암살자">아칼리 <span id="akali_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="닌자 암살자">아칼리 <span id="akali_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2573,42 +3303,48 @@
                     <div class="pieces cost_1 fiora">
                         <div class="tier tier_a">a</div><img src=pieces\fiora.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 검사">피오라 <span id="fiora_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 검사">피오라 <span id="fiora_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 shen">
                         <div class="tier tier_a">a</div><img src=pieces\shen.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="닌자 검사">쉔 <span id="shen_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="닌자 검사">쉔 <span id="shen_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 aatrox">
                         <div class="tier tier_a">a</div><img src=pieces\aatrox.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 검사">아트록스 <span id="aatrox_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 검사">아트록스 <span id="aatrox_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 gangplank">
                         <div class="tier tier_a">a</div><img src=pieces\gangplank.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="해적 검사,총잡이">갱플랭크 <span id="gangplank_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="해적 검사,총잡이">갱플랭크 <span id="gangplank_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 draven">
                         <div class="tier tier_a">a</div><img src=pieces\draven.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="제국 검사">드레이븐 <span id="draven_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="제국 검사">드레이븐 <span id="draven_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 yasuo">
                         <div class="tier tier_a">a</div><img src=pieces\yasuo.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="추방자 검사">야스오 <span id="yasuo_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="추방자 검사">야스오 <span id="yasuo_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2623,42 +3359,48 @@
                     <div class="pieces cost_1 garen">
                         <div class="tier tier_a">a</div><img src=pieces\garen.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 기사">가렌 <span id="garen_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 기사">가렌 <span id="garen_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_1 darius">
                         <div class="tier tier_a">a</div><img src=pieces\darius.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="제국 기사">다리우스 <span id="darius_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="제국 기사">다리우스 <span id="darius_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_1 mordekaiser">
                         <div class="tier tier_a">a</div><img src=pieces\mordekaiser.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="유령 기사">모데카이저 <span id="mordekaiser_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="유령 기사">모데카이저 <span id="mordekaiser_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 poppy">
                         <div class="tier tier_a">a</div><img src=pieces\poppy.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="요들 기사">뽀삐 <span id="poppy_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="요들 기사">뽀삐 <span id="poppy_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 sejuani">
                         <div class="tier tier_a">a</div><img src=pieces\sejuani.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 기사">세주아니 <span id="sejuani_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 기사">세주아니 <span id="sejuani_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 kayle">
                         <div class="tier tier_a">a</div><img src=pieces\kayle.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 기사">케일 <span id="kayle_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 기사">케일 <span id="kayle_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2673,35 +3415,40 @@
                     <div class="pieces cost_1 warwick">
                         <div class="tier tier_a">a</div><img src=pieces\warwick.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생 싸움꾼">워윅 <span id="warwick_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="야생 싸움꾼">워윅 <span id="warwick_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 reksai">
                         <div class="tier tier_a">a</div><img src=pieces\reksai.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="공허 싸움꾼">렉사이 <span id="reksai_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="공허 싸움꾼">렉사이 <span id="reksai_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 blitzcrank">
                         <div class="tier tier_a">a</div><img src=pieces\blitzcrank.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="로봇 싸움꾼">블리츠크랭크 <span id="blitzcrank_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="로봇 싸움꾼">블리츠크랭크 <span id="blitzcrank_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 volibear">
                         <div class="tier tier_a">a</div><img src=pieces\volibear.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 싸움꾼">볼리베어 <span id="volibear_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 싸움꾼">볼리베어 <span id="volibear_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 chogath">
                         <div class="tier tier_a">a</div><img src=pieces\chogath.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="공허 싸움꾼">초가스 <span id="chogath_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="공허 싸움꾼">초가스 <span id="chogath_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2716,35 +3463,40 @@
                     <div class="pieces cost_1 graves">
                         <div class="tier tier_a">a</div><img src=pieces\graves.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="해적 총잡이">그레이브즈 <span id="graves_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="해적 총잡이">그레이브즈 <span id="graves_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_1 tristana">
                         <div class="tier tier_a">a</div><img src=pieces\tristana.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="요들 총잡이">트리스타나 <span id="tristana_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="요들 총잡이">트리스타나 <span id="tristana_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 lucian">
                         <div class="tier tier_a">a</div><img src=pieces\lucian.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 총잡이">루시안 <span id="lucian_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 총잡이">루시안 <span id="lucian_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 gangplank">
                         <div class="tier tier_a">a</div><img src=pieces\gangplank.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="해적 검사,총잡이">갱플랭크 <span id="gangplank_prob_3">0%</span></span></div>
+                            <br><span data-tooltip-text="해적 검사,총잡이">갱플랭크 <span id="gangplank_prob_3">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 missfortune">
                         <div class="tier tier_a">a</div><img src=pieces\missfortune.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="해적 총잡이">미스포츈 <span id="missfortune_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="해적 총잡이">미스포츈 <span id="missfortune_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td id="guardian">
@@ -2757,14 +3509,16 @@
                     <div class="pieces cost_2 braum">
                         <div class="tier tier_a">a</div><img src=pieces\braum.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 수호자">브라움 <span id="braum_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 수호자">브라움 <span id="braum_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 leona">
                         <div class="tier tier_a">a</div><img src=pieces\leona.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 수호자">레오나 <span id="leona_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 수호자">레오나 <span id="leona_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2779,35 +3533,40 @@
                     <div class="pieces cost_1 nidalee">
                         <div class="tier tier_a">a</div><img src=pieces\nidalee.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생 형상변환자">니달리 <span id="nidalee_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="야생 형상변환자">니달리 <span id="nidalee_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 elise">
                         <div class="tier tier_a">a</div><img src=pieces\elise.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 형상변환자">앨리스 <span id="elise_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 형상변환자">앨리스 <span id="elise_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 shyvana">
                         <div class="tier tier_a">a</div><img src=pieces\shyvana.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="용 형상변환자">쉬바나 <span id="shyvana_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="용 형상변환자">쉬바나 <span id="shyvana_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 gnar">
                         <div class="tier tier_a">a</div><img src=pieces\gnar.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="야생,요들 형상변환자">나르 <span id="gnar_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="야생,요들 형상변환자">나르 <span id="gnar_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 swain">
                         <div class="tier tier_a">a</div><img src=pieces\swain.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마,제국 형상변환자">스웨인 <span id="swain_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="악마,제국 형상변환자">스웨인 <span id="swain_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td id="ranger">
@@ -2820,14 +3579,16 @@
                     <div class="pieces cost_1 vayne">
                         <div class="tier tier_a">a</div><img src=pieces\vayne.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="귀족 정찰대">베인 <span id="vayne_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="귀족 정찰대">베인 <span id="vayne_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_2 varus">
                         <div class="tier tier_a">a</div><img src=pieces\varus.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 정찰대">바루스 <span id="varus_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 정찰대">바루스 <span id="varus_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -2842,28 +3603,32 @@
                     <div class="pieces cost_2 lissandra">
                         <div class="tier tier_a">a</div><img src=pieces\lissandra.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 원소술사">리산드라 <span id="lissandra_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 원소술사">리산드라 <span id="lissandra_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_3 kennen">
                         <div class="tier tier_a">a</div><img src=pieces\kennen.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="닌자,요들 원소술사">케넨 <span id="kennen_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="닌자,요들 원소술사">케넨 <span id="kennen_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 brand">
                         <div class="tier tier_a">a</div><img src=pieces\brand.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="악마 원소술사">브랜드 <span id="brand_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="악마 원소술사">브랜드 <span id="brand_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_5 anivia">
                         <div class="tier tier_a">a</div><img src=pieces\anivia.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 원소술사">애니비아 <span id="anivia_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 원소술사">애니비아 <span id="anivia_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td></td>
@@ -2872,14 +3637,16 @@
                     <div class="pieces cost_3 ashe">
                         <div class="tier tier_a">a</div><img src=pieces\ashe.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="빙하 정찰대">애쉬 <span id="ashe_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="빙하 정찰대">애쉬 <span id="ashe_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
                 <td><img class="info_icon" src="img\info.png">
                     <div class="pieces cost_4 kindred">
                         <div class="tier tier_a">a</div><img src=pieces\kindred.png>
                         <div class="name"><span class="star">　</span>
-                            <br><span data-tooltip-text="유령 정찰대">킨드레드 <span id="kindred_prob_2">0%</span></span></div>
+                            <br><span data-tooltip-text="유령 정찰대">킨드레드 <span id="kindred_prob_2">0%</span></span>
+                        </div>
                     </div>
                 </td>
 
@@ -2926,10 +3693,6 @@
             <br>
             <br>
             <br>
-			
-			
-			
-
 
 <div id="disqus_thread"></div>
 <script>
@@ -2951,8 +3714,7 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            			
-			
+
 </body>
 
 </html>
